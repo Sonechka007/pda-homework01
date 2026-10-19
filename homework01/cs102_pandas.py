@@ -1,7 +1,6 @@
 import pandas as pd
 import re
 from typing import Tuple
-
 # Задача 1
 def filter_fsuir_students(data: pd.DataFrame) -> Tuple[int, int, pd.DataFrame]:
     fsuir = data[data['факультет'].str.contains(
